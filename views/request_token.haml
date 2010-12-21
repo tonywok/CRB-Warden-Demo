@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %title Warden Demo
+  %body
+    %h1 Generate API Token
+    %form{:action => '/generate_token', :method => 'post'}
+      %label{:for => 'email'} email
+      %input{:type => 'text', :name => 'email'}
+      %input{:type => 'submit', :value => 'Submit'}
+

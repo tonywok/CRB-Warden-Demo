@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %title Warden Demo
+  %body
+    %form{:action => '/sign_in', :method => 'post'}
+      %label{:for => 'username'} username
+      %br
+      %input{:type => 'text', :name => 'username'}
+      %br
+      %label{:for => 'password'} password
+      %br
+      %input{:type => 'password', :name => 'password'}
+      %br
+      %input{:type => 'submit', :value => 'Do it'}
+

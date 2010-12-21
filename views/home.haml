@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title Warden Demo
+  %body
+    %p
+      - if env['warden'].user(:admin)
+        Logged in as admin
+      - else
+        Not currently logged in
+    %ul
+      %li
+        %a{:href => '/request_token', :value => 'Request API token'} Request API token
+      %li
+        %a{:href => '/sign_in', :value => 'Admin sign in'} Sign in
+      %li
+        %a{:href => '/sign_out', :value => 'Admin sign out'} Sign out
+      %li
+        %a{:href => '/users', :value => 'Admin sign out'} View users

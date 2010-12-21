@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title Warden Demo
+  %body
+    %h1 API Users
+    = @users.each do |user|
+      %ul
+        %li= user['email']
+        %li= user['api_token']
+        %li= user['num_requests']
+
